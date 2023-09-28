@@ -1,0 +1,56 @@
+name: apod_app
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=3.1.1 <4.0.0'
+
+dependencies: 
+  json_annotation: ^4.8.0
+  firebase_core: ^2.16.0
+  json_serializable: ^6.6.1
+  cached_network_image: ^3.2.1
+  build_runner: ^2.3.3
+  get_cli: ^1.8.4
+  http: ^0.13.5
+  google_fonts: ^4.0.3
+  flutter_svg: ^1.0.0
+  cupertino_icons: ^1.0.2
+  flutter_animate: ^4.2.0+1
+  expandable_text: ^2.3.0
+  flutter_launcher_icons: ^0.13.1
+  rename: ^2.1.1
+  get: 4.6.6
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter_launcher_icons: 
+  image_path: assets/Icons/icon.png
+  web: 
+    image_path: path/to/image.png
+    background_color: '#hexcode'
+    theme_color: '#hexcode'
+    generate: true
+  windows: 
+    image_path: path/to/image.png
+    generate: true
+    icon_size: 48
+  macos: 
+    image_path: path/to/image.png
+    generate: true
+  flutter_driver: 
+    sdk: flutter
+  android: true
+  ios: true
+  min_sdk_android: 21
+
+flutter: 
+  assets: 
+    - assets/image/
+  uses-material-design: true
+
