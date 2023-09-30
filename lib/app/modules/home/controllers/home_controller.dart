@@ -8,7 +8,7 @@ class HomeController extends GetxController {
 
   final count = 0.obs;
 
-  var isDataLoading = false.obs;
+  var isDataLoading = true.obs;
   final isExpanded = false.obs;
   final tappedindex = 0.obs;
 
@@ -24,7 +24,6 @@ class HomeController extends GetxController {
   void increment() => count.value++;
 
   apodLayer() async {
-    isDataLoading.value = true;
     try {
       var temp = await ApodCountService().fetchApodImages();
       apodData.addAll(temp);
